@@ -1,0 +1,24 @@
+chatbot-api/
+│
+├── app/
+│   ├── main.py              # FastAPI entry point
+│   ├── api/
+│   │   └── chat.py          # Chat endpoints
+│   ├── core/
+│   │   ├── config.py        # Env & settings
+│   │   └── logging.py
+│   ├── services/
+│   │   └── chat_service.py  # LangChain logic
+│   ├── prompts/
+│   │   └── chat_prompt.py   # Prompt templates
+│   ├── models/
+│   │   └── schemas.py       # Pydantic models
+│   └── memory/
+│       └── in_memory.py     # Session memory
+│
+├── .env
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── docker/
+    └── Dockerfile

@@ -1,0 +1,9 @@
+Client (UI / Postman)
+        ↓
+FastAPI (REST)
+        ↓
+Chat Service Layer
+        ↓
+Prompt Template + Memory
+        ↓
+Hugging Face LLM

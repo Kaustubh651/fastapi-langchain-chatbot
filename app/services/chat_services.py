@@ -48,13 +48,13 @@ class ChatService:
 
     def __init__(self):
         self.llm = HuggingFaceEndpoint(
-            repo_id="sequelbox/Llama2-70B-SunsetBoulevard",#"HuggingFaceH4/zephyr-7b-beta"
+            repo_id="mistralai/Mistral-7B-Instruct-v0.2",#"HuggingFaceH4/zephyr-7b-beta"
             task="text-generation",
             max_new_tokens=512
         )
 
         self.model = ChatHuggingFace(llm=self.llm)
-        self.promt = get_chat_prompt()
+        self.prompt = get_chat_prompt()
 
     def generate_response(
             self,
